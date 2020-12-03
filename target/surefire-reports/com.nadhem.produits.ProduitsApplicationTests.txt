@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.nadhem.produits.ProduitsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.319 s <<< FAILURE! - in com.nadhem.produits.ProduitsApplicationTests
+testUpdateProduit  Time elapsed: 0.064 s  <<< ERROR!
+org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+	at com.nadhem.produits.ProduitsApplicationTests.testUpdateProduit(ProduitsApplicationTests.java:50)
+Caused by: javax.persistence.RollbackException: Error while committing the transaction
+	at com.nadhem.produits.ProduitsApplicationTests.testUpdateProduit(ProduitsApplicationTests.java:50)
+Caused by: javax.validation.ValidationException: HV000028: Unexpected exception during isValid call.
+	at com.nadhem.produits.ProduitsApplicationTests.testUpdateProduit(ProduitsApplicationTests.java:50)
+Caused by: java.lang.UnsupportedOperationException
+	at com.nadhem.produits.ProduitsApplicationTests.testUpdateProduit(ProduitsApplicationTests.java:50)
+
